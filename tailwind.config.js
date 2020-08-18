@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.jsx'], // this setting will automatically purge if process.env.NODE_ENV is production else it will not do anything
+  purge: ['./src/**/*.html', './src/**/*.jsx', './src/App.js'], // this setting will automatically purge if process.env.NODE_ENV is production else it will not do anything
   // purge: { // use this if you want to run even in development env. You will need to re-build if you include classes that were already purged
   //   enabled: true,
   //   content: ['./src/**/*.html', './src/**/*.jsx']
