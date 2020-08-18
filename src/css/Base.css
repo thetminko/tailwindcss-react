@@ -1,0 +1,55 @@
+/* 
+The order of the following is very important. If the order is wrong, css classes will not have any effect and you will end up adding !important to stylings
+ */
+
+@tailwind base;
+
+/* 
+Add your custom base styles if you have any. Normally, Tailwind is good enough. Below is the examples of base style tags
+https://tailwindcss.com/docs/adding-base-styles
+html, body {}
+a {}
+h1 {} 
+h2 {}
+h3 {}
+*/
+
+@tailwind components;
+/* 
+Add your custom component styles if you have any. example
+https://tailwindcss.com/docs/extracting-components
+*/
+
+.btn {
+  @apply px-4 py-2 rounded-full;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-800;
+}
+
+.btn-blue:focus {
+  @apply bg-blue-800;
+}
+
+@tailwind utilities;
+/* 
+Add your custom utilties styles if you have any. example
+https://tailwindcss.com/docs/adding-new-utilities
+*/
+.rotate-0 {
+  transform: rotate(0deg);
+}
+.rotate-90 {
+  transform: rotate(90deg);
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.rotate-270 {
+  transform: rotate(270deg);
+}
